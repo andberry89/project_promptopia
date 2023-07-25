@@ -48,6 +48,11 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
             }
             height={12}
             width={12}
+            alt={
+              copied === post.prompt
+                ? "Copied to clipboard"
+                : "Copy to clipboard"
+            }
           />
         </div>
       </div>
